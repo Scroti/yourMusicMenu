@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import Callback from "./Callback";
-import "./index.css";
+import TopSongs from "./TopSongs";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/callback",
     element: <Callback />,
+  },
+  {
+    path: "/tt",
+    element: <TopSongs />,
   },
 ]);
 ReactDOM.createRoot(
